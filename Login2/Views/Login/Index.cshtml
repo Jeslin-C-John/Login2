@@ -1,0 +1,23 @@
+﻿@model Login2.Models.DataModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        <p>Name</p>
+        @Html.TextBoxFor(model => model.Name)
+    </div>
+    <div>
+        <p>Password</p>
+        @Html.TextBoxFor(model => model.Password)
+    </div>
+    <div>
+        <br />
+        <input type="submit" value="Login" />
+    </div>
+
+}
